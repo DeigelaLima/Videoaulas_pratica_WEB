@@ -252,30 +252,44 @@ TALK TO ME
 </h2>
 <hr>
 
+<!-- * action, indica a url que deve receber esses dados
+     * method= "GET" ou method= "POST", esses dois metodos do protocolo http -->
 <form action="" method="">
 
-  <label for="empresa">Company:</label>
-  <input type="text" id="empresa" name="empresa" required><br>
+  <label for="company">Company:</label>
+  <input type="text" id="company" name="company" required><br>
   
-    <label for="contato">Email contact:</label>
-  <input type="text" id="contato" name="contato" required><br>
+  <label for="contact">Email:</label>
+  <input type="email" id="contact" name="contact" required><br>
   
   <fieldset>
     <legend>
-    Job type:
+        Job type:
     </legend>
-      Freelance:<input type="radio" name="job">
-  Part-time<input type="radio" name="job">
-  Full-time<input type="radio" name="job" checked>
+      <label for="talk">Talk
+        <input type="radio" name="job" id="talk" checked>
+      </label>
+
+      <label for="part-time">Part-Time
+        <input type="radio" name="job" id="part-time">
+      </label>
+
+      <label for="full-time">Full-Time
+        <input type="radio" name="job" id="full-time">
+      </label>   
   </fieldset>
   
-  <label for="remote">Remote:</label>
-  <input type="checkbox" id="remote" name="remote">
-  <br>
+  <label for="remote">Remote:
+    <input type="checkbox" id="remote" name="remote" checked>
+  </label>
+    <br>
   
-  <label for="proposta">Propose:</label>
-  <textarea id="proposta" name="proposta"></textarea>
+  <label for="proposal">Propose:</label>
+  <textarea id="proposal" name="proposal">Explain your offer here</textarea>
   
   <br>
   <input type="submit" value="Send">
+
+  <input type="number" min="1" max="5">
+
 </form>
