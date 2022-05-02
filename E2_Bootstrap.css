@@ -1,0 +1,25 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F8FA;
+    color: rgb(88, 103, 124);
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+}
+
+h2, h4, h5, h6{
+    color: #434E5E;
+    margin: 5px 0;
+}
+
+h2{
+   padding-bottom: 10px;
+   border-bottom: 1px solid;
+   margin: 40px 0 20px 0;
+}
